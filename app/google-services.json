@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "261070078360",
+    "project_id": "citiflo-d0b37",
+    "storage_bucket": "citiflo-d0b37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261070078360:android:337d6c66fc8ddeef436bed",
+        "android_client_info": {
+          "package_name": "com.munachi.citiflo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7XaCLHZScwQLbPnl3oM79h2BFh97KfbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

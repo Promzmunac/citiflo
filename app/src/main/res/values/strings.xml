@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Citiflo</string>
+
+    <string name="title_onboarding_1">Send Anything, Anywhere </string>
+    <string name="connects_clients">citiflo facilitates the connection between clients and customers seeking logistical services.</string>
+
+    <string name="Hire_or_enlist">Hire or Enlist a Vehicle</string>
+    <string name="Enhances_your_business">Citiflo enhances your business visibility, reaching new heights through targeted advertising your vehicles rent or hire</string>
+
+    <string name="back">Back</string>
+    <string name="GetStarted">Get started</string>
+    <string name="alreadyHaveAcct">Already have an account?</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="Username">Username</string>
+    <string name="signup">SignUp</string>
+    <string name="home">Home</string>
+    <string name="favourites">Favourites</string>
+    <string name="Message">Message</string>
+    <string name="Account">Account</string>
+
+
+</resources>
