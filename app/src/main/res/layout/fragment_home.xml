@@ -77,23 +77,19 @@
 
       </androidx.appcompat.widget.LinearLayoutCompat>
 
-      <LinearLayout
+              <LinearLayout
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:padding="15dp"
-            android:layout_marginTop="20dp"
+              android:padding="20dp"
               android:orientation="horizontal">
 
-
-
-
-              <Spinner
-                  android:id="@+id/spinnerDropDown"
-                  android:layout_width="120dp"
+              <EditText
+                  android:layout_width="110dp"
                   android:layout_height="50dp"
+                  android:text="Nigeria"
                   android:textAlignment="center"
-                  android:layout_weight="1"
                   android:background="@drawable/btn_background"
+                  android:layout_weight="1"
                   android:layout_marginEnd="10dp"
                   android:layout_marginStart="20dp"
                   android:textSize="16sp"
@@ -104,15 +100,14 @@
                   android:layout_width="190dp"
                   android:layout_height="50dp"
                   android:layout_weight="1"
-                  android:hint="I am trying to find..."
-                  android:background="@drawable/bg_green_empty"
+                  android:text="I am trying to find..."
+                  android:background="@drawable/btn_background"
                   android:textSize="16sp"
                   android:layout_marginEnd="5dp"
                   android:layout_marginStart="15dp"
                   android:drawableEnd="@drawable/search"
-                  android:textColor="@color/md_grey_300"
-                  android:paddingEnd="15dp"
-                  android:paddingStart="10dp"
+                  android:textColor="@color/white"
+                  android:paddingStart="15dp"
                   android:padding="5dp"
                   tools:ignore="RtlSymmetry" />
 
@@ -126,13 +121,11 @@
               <TextView
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:text="Find your choice of Logistics or Register your vehicle for hire"
-                  android:textSize="15sp"
-                  android:layout_marginStart="8dp"
-                  android:layout_marginEnd="8dp"
-                  android:textColor="@color/md_grey_500"
+                  android:text="Find your choioce of Logistics or Register your vehicle for hire"
+                  android:textSize="16sp"
+                  android:textColor="@color/black"
                   android:textAlignment="center"
-                  android:padding="12dp"/>
+                  android:padding="10dp"/>
 
               <LinearLayout
                   android:layout_width="match_parent"
@@ -140,7 +133,6 @@
                   android:layout_gravity="center_horizontal"
                   android:gravity="fill_vertical"
                   android:layout_marginStart="10dp"
-                  android:layout_marginTop="10dp"
                   android:orientation="horizontal">
 
                   <androidx.cardview.widget.CardView
@@ -255,7 +247,6 @@
               </LinearLayout>
 
           </LinearLayout>
-
           <LinearLayout
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -267,28 +258,27 @@
                   android:layout_height="40dp"
                   android:text="Hot Deals"
                   android:textAlignment="center"
-                  android:background="@drawable/bg_green_empty"
+                  android:background="@drawable/btn_background"
                   android:layout_gravity="center"
                   android:gravity="center"
                   android:layout_marginEnd="5dp"
                   android:layout_marginStart="10dp"
                   android:textSize="16sp"
-                  android:textColor="@color/md_green_600"
+                  android:textColor="@color/white"
                  />
 
               <TextView
                   android:layout_width="wrap_content"
                   android:layout_height="40dp"
                   android:text="Trending Services"
-                  android:background="@drawable/btn_background_grey"
+                  android:background="@drawable/btn_background"
                   android:textSize="16sp"
                   android:layout_weight="1"
                   android:layout_marginEnd="20dp"
                   android:layout_marginStart="5dp"
                   android:layout_gravity="center"
                   android:gravity="center"
-                  android:textStyle="bold"
-                  android:textColor="@color/md_grey_500"
+                  android:textColor="@color/white"
                   android:padding="4dp"
                   tools:ignore="RtlSymmetry" />
 
@@ -296,13 +286,13 @@
                   android:layout_width="wrap_content"
                   android:layout_height="40dp"
                   android:text="SEE ALL"
+                  android:background="@drawable/btn_background"
                   android:textSize="12sp"
                   android:layout_marginEnd="10dp"
                   android:layout_marginStart="10dp"
                   android:layout_gravity="center"
                   android:gravity="center"
-                  android:textStyle="bold"
-                  android:textColor="@color/md_orange_500"
+                  android:textColor="@color/white"
                   tools:ignore="RtlSymmetry" />
           </LinearLayout>
 
@@ -323,70 +313,49 @@
                   android:layout_height="wrap_content"
                   android:layout_marginBottom="10dp"
                   android:layout_margin="5dp"
-                    android:padding="2dp"
                   android:layout_weight="1"
                   app:cardCornerRadius="8dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
                         android:orientation="vertical">
 
-                        <androidx.cardview.widget.CardView
+                        <ImageView
                             android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_marginBottom="10dp"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            app:cardCornerRadius="8dp">
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="200dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/banner" />
-                        </androidx.cardview.widget.CardView>
-
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/banner" />
 
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="4dp"
-                            android:background="@drawable/btn_background"
-                            android:paddingStart="10dp"
-                            android:text="Same Day Delivery"
-                            android:textColor="@color/md_green_900"
-                            android:textSize="13sp"
-                            android:textStyle="bold" />
+                      android:layout_width="match_parent"
+                      android:layout_height="20dp"
+                      android:textSize="13sp"
+                      android:textStyle="bold"
+                      android:paddingStart="10dp"
+                      android:textColor="@color/black"
+                      android:layout_marginTop="10dp"
+                      android:text="Bike"/>
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginEnd="4dp"
-                            android:background="@drawable/bg_orange_fill"
-                            android:textColor="@color/white"
-                            android:text="Groceries, Food and Smal Items"
-                            android:textAlignment="center"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="20dp"
+                      android:textSize="13sp"
+                      android:textStyle="bold"
+                      android:textAlignment="center"
+                      android:layout_marginTop="4dp"
+                      android:text="Groceries, Food and Smal Items"/>
 
                   <LinearLayout
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
-                      android:layout_marginTop="8dp"
-                      android:layout_marginBottom="8dp"
                       android:orientation="horizontal">
                       <TextView
                           android:layout_width="wrap_content"
                           android:layout_height="20dp"
                           android:textSize="14sp"
                           android:textStyle="italic"
-                          android:layout_marginStart="4dp"
-                          android:layout_marginEnd="4dp"
+                          android:layout_marginEnd="2dp"
                           android:textAlignment="center"
                           android:layout_marginTop="4dp"
                           android:text="GrabLogistics"/>
@@ -401,8 +370,6 @@
                           android:layout_height="20dp"
                           android:textSize="14sp"
                           android:textStyle="italic"
-                          android:layout_marginStart="4dp"
-                          android:layout_marginEnd="4dp"
                           android:textAlignment="center"
                           android:layout_marginTop="4dp"
                           android:text="4.3"/>
@@ -410,83 +377,61 @@
               </LinearLayout>
                  </androidx.cardview.widget.CardView>
 
-                  <androidx.cardview.widget.CardView
+                <androidx.cardview.widget.CardView
                       android:layout_width="150dp"
                       android:layout_height="wrap_content"
-                      android:layout_marginBottom="10dp"
-                      android:layout_margin="5dp"
+                      android:layout_marginBottom="15dp"
                       android:layout_weight="1"
+                      android:layout_margin="5dp"
                       app:cardCornerRadius="8dp">
 
-                      <LinearLayout
-                          android:layout_width="match_parent"
-                          android:layout_height="wrap_content"
-                          android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                          <androidx.cardview.widget.CardView
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/banner" />
+
+                        <TextView
                               android:layout_width="match_parent"
-                              android:layout_height="0dp"
-                              android:layout_marginBottom="10dp"
-                              android:layout_margin="5dp"
-                              android:layout_weight="1"
-                              app:cardCornerRadius="8dp">
-                              <ImageView
-                                  android:layout_width="match_parent"
-                                  android:layout_height="200dp"
-                                  android:scaleType="centerCrop"
-                                  android:src="@drawable/hired_car" />
-                          </androidx.cardview.widget.CardView>
-
-
-                          <TextView
-                              android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:layout_marginTop="10dp"
-                              android:background="@drawable/bg_orange_fill"
+                              android:layout_height="20dp"
+                              android:textSize="13sp"
+                              android:textStyle="bold"
                               android:paddingStart="10dp"
-                              android:text="@string/small_amp_big_shipment"
-                              android:layout_marginStart="4dp"
-                              android:layout_marginEnd="4dp"
-                              android:textColor="@color/white"
-                              android:textSize="13sp"
-                              android:textStyle="bold" />
+                              android:textColor="@color/black"
+                              android:layout_marginTop="10dp"
+                              android:text="Bike"/>
 
                           <TextView
                               android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
-                              android:layout_marginTop="10dp"
-                              android:background="@drawable/bg_orange_empty"
-                              android:text="Inter - state Shipping"
-                              android:textAlignment="center"
-                              android:layout_marginStart="4dp"
-                              android:layout_marginEnd="4dp"
+                              android:layout_height="20dp"
                               android:textSize="13sp"
-                              android:textColor="@color/md_orange_500"
-                              android:textStyle="bold" />
+                              android:textStyle="bold"
+                              android:textAlignment="center"
+                              android:layout_marginTop="4dp"
+                              android:text="Groceries, Food and Smal Items"/>
 
                           <LinearLayout
                               android:layout_width="match_parent"
                               android:layout_height="wrap_content"
-                              android:layout_marginTop="8dp"
-                              android:layout_marginBottom="8dp"
-
                               android:orientation="horizontal">
                               <TextView
                                   android:layout_width="wrap_content"
                                   android:layout_height="20dp"
                                   android:textSize="14sp"
                                   android:textStyle="italic"
+                                  android:layout_marginEnd="2dp"
                                   android:textAlignment="center"
                                   android:layout_marginTop="4dp"
-                                  android:layout_marginStart="4dp"
-                                  android:layout_marginEnd="4dp"
-                                  android:text="GIG Logistics"/>
+                                  android:text="GrabLogistics"/>
 
                               <ImageView
                                   android:layout_width="20dp"
                                   android:layout_height="20dp"
-                                  android:layout_marginStart="4dp"
-                                  android:layout_marginEnd="4dp"
                                   android:layout_gravity="center"
                                   android:src="@drawable/ic_rating"/>
                               <TextView
@@ -494,11 +439,9 @@
                                   android:layout_height="20dp"
                                   android:textSize="14sp"
                                   android:textStyle="italic"
-                                  android:layout_marginStart="4dp"
-                                  android:layout_marginEnd="4dp"
                                   android:textAlignment="center"
                                   android:layout_marginTop="4dp"
-                                  android:text="4.6"/>
+                                  android:text="4.3"/>
                           </LinearLayout>
                       </LinearLayout>
                   </androidx.cardview.widget.CardView>
@@ -513,7 +456,7 @@
                   <androidx.cardview.widget.CardView
                       android:layout_width="150dp"
                       android:layout_height="wrap_content"
-                      android:layout_marginBottom="10dp"
+                      android:layout_marginBottom="15dp"
                       android:layout_margin="5dp"
                       android:layout_weight="1"
                       app:cardCornerRadius="8dp">
@@ -523,76 +466,43 @@
                           android:layout_height="wrap_content"
                           android:orientation="vertical">
 
-                          <androidx.cardview.widget.CardView
+                          <ImageView
                               android:layout_width="match_parent"
-                              android:layout_height="0dp"
-                              android:layout_marginBottom="10dp"
-                              android:layout_margin="5dp"
-                              android:layout_weight="1"
-                              app:cardCornerRadius="8dp">
-                              <ImageView
-                                  android:layout_width="match_parent"
-                                  android:layout_height="200dp"
-                                  android:scaleType="centerCrop"
-                                  android:src="@drawable/hired_van" />
-                          </androidx.cardview.widget.CardView>
-
-                          <TextView
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              android:layout_marginTop="10dp"
-                              android:background="@drawable/btn_background"
-                              android:paddingStart="10dp"
-                              android:text="Hiring Services"
-                              android:layout_marginStart="4dp"
-                              android:layout_marginEnd="4dp"
-                              android:textColor="@color/md_green_900"
-                              android:textSize="14sp"
-                              android:textStyle="bold" />
+                              android:layout_height="200dp"
+                              android:scaleType="centerCrop"
+                              android:src="@drawable/banner" />
 
                           <TextView
                               android:layout_width="match_parent"
-                              android:layout_height="wrap_content"
+                              android:layout_height="20dp"
+                              android:textSize="13sp"
+                              android:textStyle="bold"
+                              android:textColor="@color/black"
                               android:layout_marginTop="10dp"
-                              android:layout_marginStart="4dp"
-                              android:layout_marginEnd="4dp"
-                              android:background="@drawable/bg_orange_fill"
-                              android:text="Bus &amp; Cooling Van"
-                              android:textAlignment="center"
-                              android:textSize="14sp"
-                              android:textColor="@color/white"
-                              android:textStyle="bold" />
+                              android:text="Bike"/>
+
                           <TextView
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              android:layout_marginTop="10dp"
-                              android:layout_marginStart="4dp"
-                              android:layout_marginEnd="4dp"
-                              android:paddingStart="20dp"
-                              android:paddingEnd="20dp"
-                              android:background="@drawable/bg_orange_empty"
-                              android:text="Lagos"
+                              android:layout_width="match_parent"
+                              android:layout_height="20dp"
+                              android:textSize="13sp"
+                              android:textStyle="bold"
                               android:textAlignment="center"
-                              android:textSize="16sp"
-                              android:textColor="@color/md_orange_500"
-                              android:textStyle="bold" />
+                              android:layout_marginTop="4dp"
+                              android:text="Groceries, Food and Smal Items"/>
 
                           <LinearLayout
                               android:layout_width="match_parent"
                               android:layout_height="wrap_content"
-                              android:layout_marginTop="8dp"
-                              android:layout_marginBottom="8dp"
                               android:orientation="horizontal">
                               <TextView
                                   android:layout_width="wrap_content"
                                   android:layout_height="20dp"
                                   android:textSize="14sp"
                                   android:textStyle="italic"
-                                  android:layout_marginStart="4dp"
-                                  android:layout_marginEnd="4dp"
+                                  android:layout_marginEnd="2dp"
                                   android:textAlignment="center"
                                   android:layout_marginTop="4dp"
-                                  android:text="Hiyacar LTD"/>
+                                  android:text="GrabLogistics"/>
 
                               <ImageView
                                   android:layout_width="20dp"
@@ -604,20 +514,19 @@
                                   android:layout_height="20dp"
                                   android:textSize="14sp"
                                   android:textStyle="italic"
-                                  android:layout_marginStart="4dp"
-                                  android:layout_marginEnd="4dp"
                                   android:textAlignment="center"
                                   android:layout_marginTop="4dp"
-                                  android:text="4.1"/>
+                                  android:text="4.3"/>
                           </LinearLayout>
                       </LinearLayout>
                   </androidx.cardview.widget.CardView>
+
                   <androidx.cardview.widget.CardView
                       android:layout_width="150dp"
                       android:layout_height="wrap_content"
-                      android:layout_marginBottom="10dp"
-                      android:layout_margin="5dp"
+                      android:layout_marginBottom="15dp"
                       android:layout_weight="1"
+                      android:layout_margin="5dp"
                       app:cardCornerRadius="8dp">
 
                       <LinearLayout
@@ -625,79 +534,45 @@
                           android:layout_height="wrap_content"
                           android:orientation="vertical">
 
-                          <androidx.cardview.widget.CardView
+                          <ImageView
                               android:layout_width="match_parent"
-                              android:layout_height="0dp"
-                              android:layout_marginBottom="10dp"
-                              android:layout_margin="5dp"
-                              android:layout_weight="1"
-                              app:cardCornerRadius="8dp">
-                              <ImageView
-                                  android:layout_width="match_parent"
-                                  android:layout_height="200dp"
-                                  android:scaleType="centerCrop"
-                                  android:src="@drawable/hired_truck" />
-                          </androidx.cardview.widget.CardView>
+                              android:layout_height="200dp"
+                              android:scaleType="centerCrop"
+                              android:src="@drawable/banner" />
 
                           <TextView
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
-                              android:layout_marginTop="10dp"
-                              android:background="@drawable/btn_background"
+                              android:layout_width="match_parent"
+                              android:layout_height="20dp"
+                              android:textSize="13sp"
+                              android:textStyle="bold"
                               android:paddingStart="10dp"
-                              android:text="Hiring Services"
-                              android:layout_marginStart="4dp"
-                              android:layout_marginEnd="4dp"
-                              android:textColor="@color/md_green_900"
-                              android:textSize="14sp"
-                              android:textStyle="bold" />
-
-                          <TextView
-                              android:layout_width="wrap_content"
-                              android:layout_height="wrap_content"
+                              android:textColor="@color/black"
                               android:layout_marginTop="10dp"
-                              android:background="@drawable/bg_orange_fill"
-                              android:text="Trucks"
-                              android:paddingStart="20dp"
-                              android:paddingEnd="20dp"
-                              android:textColor="@color/white"
-                              android:textAlignment="center"
-                              android:textSize="14sp"
-                              android:layout_marginStart="4dp"
-                              android:layout_marginEnd="4dp"
-                              android:textStyle="bold" />
+                              android:text="Bike"
+                              tools:ignore="RtlSymmetry" />
 
                           <TextView
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_marginTop="10dp"
-                          android:layout_marginStart="4dp"
-                          android:layout_marginEnd="4dp"
-                          android:paddingStart="25dp"
-                          android:paddingEnd="25dp"
-                          android:background="@drawable/bg_orange_empty"
-                          android:text="Ibadan"
-                          android:textAlignment="center"
-                          android:textSize="18sp"
-                          android:textColor="@color/md_orange_500"
-                          android:textStyle="bold" />
+                              android:layout_width="match_parent"
+                              android:layout_height="20dp"
+                              android:textSize="13sp"
+                              android:textStyle="bold"
+                              android:textAlignment="center"
+                              android:layout_marginTop="4dp"
+                              android:text="Groceries, Food and Smal Items"/>
+
                           <LinearLayout
                               android:layout_width="match_parent"
                               android:layout_height="wrap_content"
-                              android:layout_marginTop="8dp"
-                              android:layout_marginBottom="8dp"
                               android:orientation="horizontal">
-
                               <TextView
                                   android:layout_width="wrap_content"
                                   android:layout_height="20dp"
                                   android:textSize="14sp"
                                   android:textStyle="italic"
+                                  android:layout_marginEnd="2dp"
                                   android:textAlignment="center"
-                                  android:layout_marginStart="4dp"
-                                  android:layout_marginEnd="4dp"
                                   android:layout_marginTop="4dp"
-                                  android:text="DimGo Wheels"/>
+                                  android:text="GrabLogistics"/>
 
                               <ImageView
                                   android:layout_width="20dp"
@@ -709,22 +584,14 @@
                                   android:layout_height="20dp"
                                   android:textSize="14sp"
                                   android:textStyle="italic"
-                                  android:layout_marginStart="4dp"
-                                  android:layout_marginEnd="4dp"
                                   android:textAlignment="center"
                                   android:layout_marginTop="4dp"
-                                  android:text="4.1"/>
+                                  android:text="4.3"/>
                           </LinearLayout>
                       </LinearLayout>
                   </androidx.cardview.widget.CardView>
-
               </LinearLayout>
           </LinearLayout>
-
-
-
-
-
           <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
@@ -736,30 +603,28 @@
                     android:background="@color/HomeBg"/>
             </LinearLayout>
           <LinearLayout
-              android:layout_width="match_parent"
+              android:layout_width="360dp"
               android:layout_height="wrap_content"
-              android:padding="5dp"
-              android:layout_marginTop="10dp"
-              android:layout_marginBottom="80dp"
+              android:padding="20dp"
+              android:layout_marginTop="20dp"
               android:layout_gravity="center"
               android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:src="@drawable/photo__1_"/>
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_weight="1"
                 android:src="@drawable/photo"/>
 
           </LinearLayout>
 
-
-
-
   </LinearLayout>
+
+
 </ScrollView>
