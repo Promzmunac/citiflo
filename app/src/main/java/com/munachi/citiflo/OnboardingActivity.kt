@@ -7,6 +7,7 @@ import android.text.Spannable
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -89,21 +90,22 @@ class OnboardingActivity : AppCompatActivity() {
         }
 
         binding.textView3.setOnClickListener {
-            loadFragment(LoginFragment())
+           // loadFragment(LoginFragment())
             finish()
+            Toast.makeText(this, "This feature is not necesary", Toast.LENGTH_LONG).show()
         }
 
         val appendText = " Login"
         appendColoredText(appendText, Color.GREEN)
     }
 
-    private fun loadFragment(fragment: Fragment){
+/*    private fun loadFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction()
             .also { fragmentTransaction ->
             fragmentTransaction.replace(R.id.rl_create_account,fragment)
             fragmentTransaction.commit()
         }
-    }
+    }*/
 
     private fun appendColoredText(text: String, color: Int) {
         // Create a SpannableStringBuilder to hold the text and style
