@@ -6,6 +6,10 @@
         android:right="10dp"
         android:bottom="10dp"/>
 
+    <size
+        android:width="120dp"
+        android:height="50dp"/>
+
     <corners
         android:radius="10dp"/>
 

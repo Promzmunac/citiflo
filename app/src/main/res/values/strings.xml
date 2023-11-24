@@ -25,6 +25,15 @@
     <string name="Account">Account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="Nigeria_Displayed">Nigeria</string>
+    <string name="small_amp_big_shipment"><![CDATA[Small & Big Shipment]]></string>
+    <string-array name="Nigeria">
+        <item>Lagos State\n</item>
+        <item>Abuja, FCT</item>
+        <item>Ogun State</item>
+        <item>PortHarcourt</item>
+        <item>Edo State</item>
+        <item>Enugu State</item>
+    </string-array>
 
 </resources>

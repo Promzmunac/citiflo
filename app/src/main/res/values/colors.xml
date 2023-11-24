@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">@color/md_green_900</color>
+    <color name="colorPrimaryDark">@color/md_green_600</color>
+    <color name="colorAccent">@color/md_green_500</color>
+
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -8,9 +13,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="browny2">#784f3d</color>
-    <color name="colorPrimary">#6FB6F4</color>
-    <color name="colorPrimaryDark">#3E97F0</color>
-    <color name="colorAccent">#f0973e</color>
+
     <color name="HomeBg">#D9D9D9</color>
     <color name="Brightblu">#5B9EE1</color>
     <color name="light_grey">#ABABAB</color>
