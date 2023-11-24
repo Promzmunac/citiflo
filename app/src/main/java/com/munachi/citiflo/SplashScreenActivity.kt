@@ -21,7 +21,6 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-
     }
 
     override fun onStart() {
@@ -31,7 +30,9 @@ class SplashScreenActivity : AppCompatActivity() {
 
     @SuppressLint("ResourceAsColor")
     fun Splash(){
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+       // window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.md_light_green_600)
+
         Handler().postDelayed(
             {
                 val intent = Intent(this, OnboardingActivity::class.java)

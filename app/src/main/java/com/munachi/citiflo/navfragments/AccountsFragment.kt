@@ -8,13 +8,13 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import com.munachi.citiflo.R
 
-class ProfileFragment : Fragment() {
+class AccountsFragment : Fragment() {
 
     override fun onCreateView( inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return inflater.inflate(R.layout.fragment_accounts, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

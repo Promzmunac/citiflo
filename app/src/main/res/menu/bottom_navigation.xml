@@ -9,7 +9,7 @@
         android:icon="@drawable/home_states"
         />
     <item
-        android:id="@+id/cartFragment"
+        android:id="@+id/messageFragment"
         android:title="@string/Message"
         app:showAsAction="ifRoom"
         android:iconTintMode="add"
@@ -17,14 +17,14 @@
         />
 
     <item
-        android:id="@+id/favouriteFragment"
+        android:id="@+id/saveFragment"
         android:title="@string/favourites"
         app:showAsAction="ifRoom"
         android:icon="@drawable/save___states"
         />
 
     <item
-        android:id="@+id/paymentFragment"
+        android:id="@+id/accountsFragment"
         android:title="@string/Account"
         app:showAsAction="ifRoom"
         android:icon="@drawable/account___states"

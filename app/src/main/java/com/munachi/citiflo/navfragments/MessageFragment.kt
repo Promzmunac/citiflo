@@ -6,18 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.munachi.citiflo.databinding.FragmentPaymentBinding
+import com.munachi.citiflo.databinding.FragmentMessageBinding
 
 
-class PaymentFragment : Fragment() {
-    private lateinit var binding: FragmentPaymentBinding
+class MessageFragment : Fragment() {
+    private lateinit var binding: FragmentMessageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentPaymentBinding.inflate(inflater, container, false)
+        binding = FragmentMessageBinding.inflate(inflater, container, false)
         return binding.root
     }
 
