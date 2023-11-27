@@ -24,14 +24,12 @@ class OnboardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
-
-
         setContentView(binding.root)
+
         updateUi()
         supportActionBar?.hide()
         window.statusBarColor = ContextCompat.getColor(this, R.color.md_light_green_100)
         window.navigationBarColor = ContextCompat.getColor(this, R.color.grayishWhite)
-
 
     }
 
