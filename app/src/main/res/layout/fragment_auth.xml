@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/authFragmenth"
@@ -68,6 +69,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:padding="6dp"
+                android:fontFamily="@font/poppins"
                 android:paddingTop="8dp"
                 android:text="Lorem Ipsum Ipsum of lorenmthe principals office up stairs"
                 android:textAlignment="center" />
@@ -102,9 +104,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:hint="@string/Username"
+                android:fontFamily="@font/poppins"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -118,9 +121,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:hint="@string/email"
+                android:fontFamily="@font/poppins"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -136,9 +140,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:hint="@string/password"
+                android:fontFamily="@font/poppins"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -154,9 +159,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:hint="@string/confirm_password"
+                android:fontFamily="@font/poppins"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -166,6 +172,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:padding="6dp"
+            android:fontFamily="@font/poppins"
             android:paddingTop="8dp"
             android:text="By continuing you agree to our Terms and conditions and privacy policy"
             android:textAlignment="center" />
@@ -181,6 +188,7 @@
             android:background="@drawable/btn_grey_rounded_selector"
             android:backgroundTint="@color/md_green_600"
             android:text="@string/signup"
+            android:fontFamily="@font/poppins_semibold"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -205,6 +213,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/text_bg"
             android:padding="10dp"
+            android:fontFamily="@font/poppins"
             android:text="@string/continue_with_google"
             android:textAlignment="center"
             app:drawableStartCompat="@drawable/google"
@@ -221,8 +230,9 @@
             android:paddingBottom="10dp"
             android:text="Dont Have an Account?"
             android:textAlignment="center"
+            android:fontFamily="@font/poppins"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/register_btn"

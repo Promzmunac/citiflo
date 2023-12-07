@@ -1,5 +1,6 @@
 package com.munachi.citiflo
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -22,16 +23,12 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
 
-        // Change the color of the status bar
-        window.statusBarColor = ContextCompat.getColor(this, R.color.HomeBg)
-        window.navigationBarColor = ContextCompat.getColor(this, R.color.HomeBg)
+        val window = window
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.statusBarColor = getColor(R.color.md_green_900) // Use your color resource here
+        window.navigationBarColor = ContextCompat.getColor(this, R.color.md_green_900)
 
         setContentView(binding.root)
-
-
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         supportActionBar?.hide()
 
@@ -39,7 +36,7 @@ class HomeActivity : AppCompatActivity() {
 
 
         loadHomeFragment()
-//
+
         bottomNv = binding.bottomNavBar
         bottomNv.background = null
         bottomNv.menu.getItem(2).isEnabled = false
@@ -50,7 +47,6 @@ class HomeActivity : AppCompatActivity() {
             when(item.itemId){
                 R.id.homeFragment -> {
                     loadFragment(HomeFragment())
-                    window.statusBarColor = ContextCompat.getColor(this, R.color.md_green_900)
 
                     return@setOnItemSelectedListener true
                 }
@@ -89,7 +85,7 @@ class HomeActivity : AppCompatActivity() {
     private fun loadHomeFragment(){
         loadFragment(HomeFragment())
 
-        window.statusBarColor = ContextCompat.getColor(this, R.color.HomeBg)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.md_green_900)
 
     }
 }

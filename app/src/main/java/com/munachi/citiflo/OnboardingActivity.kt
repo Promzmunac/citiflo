@@ -33,9 +33,6 @@ class OnboardingActivity : AppCompatActivity() {
 
     }
 
-
-
-
     private fun updateUi(){
 
         //initialise the viewPager2

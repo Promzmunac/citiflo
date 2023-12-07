@@ -14,7 +14,7 @@ class AuthenticationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
-        window.statusBarColor = ContextCompat.getColor(this, R.color.HomeBg)
-        window.navigationBarColor = ContextCompat.getColor(this, R.color.grayishWhite)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.light_grey)
+        window.navigationBarColor = ContextCompat.getColor(this, R.color.white)
     }
 }

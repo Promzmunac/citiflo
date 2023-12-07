@@ -6,7 +6,7 @@
     android:id="@+id/chooseAuthFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_white_1000"
+    android:background="@drawable/chooseauth_bg"
     tools:context=".auth.ChooseAuthFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,12 +28,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
+
+            <ImageButton
                 android:id="@+id/back_press"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
+                android:background="@color/fui_transparent"
                 android:src="@drawable/ic_arrow_back"
                 app:tint="@color/md_green_900"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -59,6 +61,7 @@
             android:layout_marginTop="100dp"
             android:text="To enjoy access to several logistics connectios,"
             android:textAlignment="center"
+            android:fontFamily="@font/poppins"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -72,6 +75,7 @@
             android:text="Create your account below."
             android:textColor="@color/black"
             android:textAlignment="center"
+            android:fontFamily="@font/poppins"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView"
@@ -86,7 +90,7 @@
             android:text="Already have an account?"
             android:textAlignment="center"
             android:textStyle="bold"
-
+            android:fontFamily="@font/poppins"
             app:layout_constraintEnd_toEndOf="@+id/btn_sigup_email"
             app:layout_constraintStart_toStartOf="@+id/btn_sigup_email"
             app:layout_constraintTop_toBottomOf="@+id/btn_sigup_email" />
@@ -100,6 +104,7 @@
             android:layout_marginEnd="24dp"
             android:background="@drawable/text_bg"
             android:padding="10dp"
+            android:fontFamily="@font/poppins"
             android:text="Continue with Google"
             android:drawableStart="@drawable/google"
             android:textAlignment="center"
@@ -114,6 +119,7 @@
             android:layout_marginTop="24dp"
             android:background="@drawable/text_bg"
             android:padding="10dp"
+            android:fontFamily="@font/poppins"
             android:text="Sign up using Email"
             android:drawableStart="@drawable/email"
             android:textAlignment="center"

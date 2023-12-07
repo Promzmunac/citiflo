@@ -66,7 +66,7 @@ class ChooseAuthFragment : Fragment() {
     }
 
     private fun updateUserInterface(){
-       binding.btnContinueGoogle.setOnClickListener {
+        binding.btnContinueGoogle.setOnClickListener {
 
             //Toast.makeText(requireContext(), "Google Authentication...", Toast.LENGTH_LONG).show()
             signInGoogle()

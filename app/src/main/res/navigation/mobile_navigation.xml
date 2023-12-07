@@ -19,7 +19,9 @@
         <action
             android:id="@+id/action_homeFragment_to_saveFragment"
             app:destination="@id/saveFragment" />
-    </fragment>
+       </fragment>
+
+
     <fragment
         android:id="@+id/messageFragment"
         android:name="com.munachi.citiflo.navfragments.MessageFragment"
@@ -36,6 +38,7 @@
             android:id="@+id/action_messageFragment_to_saveFragment"
             app:destination="@id/saveFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/accountsFragment"
         android:name="com.munachi.citiflo.navfragments.AccountsFragment"
@@ -51,6 +54,7 @@
             android:id="@+id/action_accountsFragment_to_saveFragment"
             app:destination="@id/saveFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/saveFragment"
         android:name="com.munachi.citiflo.navfragments.SaveFragment"
