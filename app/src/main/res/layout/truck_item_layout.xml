@@ -44,7 +44,7 @@
 
 
             <TextView
-                android:id="@+id/deliveryType_Rv"
+                android:id="@+id/truck_deliveryType_Rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -59,7 +59,7 @@
                 tools:ignore="RtlSymmetry" />
 
             <TextView
-                android:id="@+id/deliveryProducts_Rv"
+                android:id="@+id/truck_deliveryProducts_Rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
@@ -72,7 +72,7 @@
 
 
             <TextView
-                android:id="@+id/bikerRoute_Rv"
+                android:id="@+id/truckRoute_Rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -93,7 +93,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/bikeName_Rv"
+                    android:id="@+id/truckName_Rv"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_marginTop="4dp"
@@ -112,7 +112,7 @@
                     android:src="@drawable/ic_rating" />
 
                 <TextView
-                    android:id="@+id/bikeRating_Rv"
+                    android:id="@+id/truckRating_Rv"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_marginStart="4dp"

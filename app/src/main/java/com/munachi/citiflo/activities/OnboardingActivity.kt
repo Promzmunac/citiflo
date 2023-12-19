@@ -1,4 +1,4 @@
-package com.munachi.citiflo
+package com.munachi.citiflo.activities
 
 import android.content.Intent
 import android.graphics.Color
@@ -10,11 +10,10 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
+import com.munachi.citiflo.R
 import com.munachi.citiflo.adapter.OnboardingViewPagerAdapter
-import com.munachi.citiflo.auth.LoginFragment
 import com.munachi.citiflo.databinding.ActivityOnboardingBinding
 
 class OnboardingActivity : AppCompatActivity() {

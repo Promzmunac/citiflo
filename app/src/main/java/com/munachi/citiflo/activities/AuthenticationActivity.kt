@@ -1,8 +1,9 @@
-package com.munachi.citiflo
+package com.munachi.citiflo.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
+import com.munachi.citiflo.R
 import com.munachi.citiflo.databinding.ActivityAuthenticationBinding
 
 class AuthenticationActivity : AppCompatActivity() {
@@ -14,7 +15,8 @@ class AuthenticationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
-        window.statusBarColor = ContextCompat.getColor(this, R.color.light_grey)
-        window.navigationBarColor = ContextCompat.getColor(this, R.color.white)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.md_green_900)
+        window.navigationBarColor = ContextCompat.getColor(this, R.color.md_light_green_50)
+
     }
 }

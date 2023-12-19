@@ -13,10 +13,12 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.munachi.citiflo.R
 import com.munachi.citiflo.databinding.BikeItemLayoutBinding
+import com.munachi.citiflo.databinding.BusItemLayoutBinding
 import com.munachi.citiflo.model.Biker
+import com.munachi.citiflo.model.BusOwner
 
-class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
-    : RecyclerView.Adapter<BikersAdapter.IceCreamViewHolder>() {
+class BusAdapter(private val context: Context, var item: ArrayList<BusOwner>)
+    : RecyclerView.Adapter<BusAdapter.IceCreamViewHolder>() {
 
     private lateinit var mListener: onItemClickedListener
 
@@ -30,16 +32,16 @@ class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
     }
 
     inner class IceCreamViewHolder(
-        val binding: BikeItemLayoutBinding,
+        val binding: BusItemLayoutBinding,
         listener: onItemClickedListener
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        val bikePhotoRv = binding.PhotoUriRv
-        val deliveryTypeRv = binding.deliveryTypeRv
-        val deliveryProductsRv = binding.deliveryProductsRv
-        val bikerRouteRv = binding.bikerRouteRv
-        val bikeNameRv = binding.bikeNameRv
-        val bikeRatingRv = binding.bikeRatingRv
+        val busPhotoRv = binding.PhotoUriRv
+        val busDeliveryTypeRv = binding.busDeliveryTypeRv
+        val busDeliveryProductsRv = binding.busDeliveryProductsRv
+        val busRouteRv = binding.busRouteRv
+        val busNameRv = binding.busNameRv
+        val busRatingRv = binding.busRatingRv
 
         init {
             itemView.setOnClickListener {
@@ -49,7 +51,7 @@ class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IceCreamViewHolder {
-        val layout = BikeItemLayoutBinding.inflate(LayoutInflater.from(parent.context),
+        val layout = BusItemLayoutBinding.inflate(LayoutInflater.from(parent.context),
             parent, false)
         return IceCreamViewHolder(layout, mListener)
     }
@@ -62,27 +64,28 @@ class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
     override fun onBindViewHolder(holder: IceCreamViewHolder, position: Int) {
         val current = item[position]
 
-        holder.deliveryTypeRv.text = current.deliveryType
-        holder.deliveryProductsRv.text= current.deliveryProducts
-        holder.bikerRouteRv.text = current.bikerRoute!!.trim()
-        holder.bikeNameRv.text = current.bikeName.toString().trim()
-        holder.bikeRatingRv.setText(current.bikeRating)
+        holder.busDeliveryTypeRv.text = current.busdeliveryType
+        holder.busDeliveryProductsRv.text= current.busdeliveryProducts
+        holder.busRouteRv.text = current.busRoute!!.trim()
+        holder.busNameRv.text = current.busName.toString().trim()
+        holder.busRatingRv.setText(current.busRating)
 
         Glide.with(context)
-            .load(current.PhotoUri)
+            .load(current.busPhotoUri)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
             //.error(placeholder)
             .placeholder(R.drawable.alert_circle)
           /*  .dontTransform()
             .override(200,200)*/
-            .into(holder.bikePhotoRv)
+            .into(holder.busPhotoRv)
 
     }
 
+    @Suppress("UNCHECKED_CAST")
     @SuppressLint("NotifyDataSetChanged")
-    fun onApplySearch(newList: List<Biker>) {
+    fun onApplySearch(newList: List<BusOwner>) {
 
-        this.item = newList as ArrayList<Biker>
+        this.item = newList as ArrayList<BusOwner>
         notifyDataSetChanged()
     }
 }

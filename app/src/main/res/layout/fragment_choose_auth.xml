@@ -46,8 +46,8 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:src="@drawable/citiflogreen"
                     app:tint="@color/md_green_900"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="To enjoy access to several logistics connectios,"
+            android:text="@string/to_enjoy_access_to_several_logistics_connections"
             android:textAlignment="center"
             android:fontFamily="@font/poppins"
             android:textColor="@color/black"

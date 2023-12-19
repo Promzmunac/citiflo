@@ -1,17 +1,14 @@
-package com.munachi.citiflo
+package com.munachi.citiflo.activities
 
-import android.app.ActionBar
 import android.content.Intent
 import android.os.Bundle
-import android.view.Gravity
-import android.view.ViewGroup
-import android.view.ViewGroup.LayoutParams
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.munachi.citiflo.R
 import com.munachi.citiflo.adapter.BikersAdapter
 import com.munachi.citiflo.databinding.ActivityBikerBinding
 import com.munachi.citiflo.helperclasses.BikerHelperClass
@@ -59,7 +56,7 @@ class BikerActivity : AppCompatActivity() {
         gridRecycler.layoutManager = GridLayoutManager(this, 2)
 
         getUserData()
-
+        navFunctionalities()
     }
 
     private fun getUserData() {
@@ -118,6 +115,7 @@ class BikerActivity : AppCompatActivity() {
                            i.deliveryProducts!!.lowercase(Locale.ROOT).contains(newText)){
                            searchList.add(i)
                        }
+                      
                     }
                     if (searchList.isEmpty()){
                         Toast.makeText(this@BikerActivity, "No Data", Toast.LENGTH_LONG).show()
@@ -129,6 +127,15 @@ class BikerActivity : AppCompatActivity() {
                 return true
             }
         })
+    }
+
+    private fun navFunctionalities(){
+        binding.backPress.setOnClickListener {
+            onBackPressed()
+        }
+        binding.menuDots.setOnClickListener {
+            Toast.makeText(this, "Menu Clicked", Toast.LENGTH_LONG).show()
+        }
     }
 }
 

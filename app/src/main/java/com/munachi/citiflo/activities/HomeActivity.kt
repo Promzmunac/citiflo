@@ -1,6 +1,5 @@
-package com.munachi.citiflo
+package com.munachi.citiflo.activities
 
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -10,6 +9,7 @@ import com.munachi.citiflo.navfragments.HomeFragment
 import com.munachi.citiflo.navfragments.MessageFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.munachi.citiflo.R
 import com.munachi.citiflo.databinding.ActivityHomeBinding
 import com.munachi.citiflo.navfragments.AccountsFragment
 import com.munachi.citiflo.navfragments.SaveFragment

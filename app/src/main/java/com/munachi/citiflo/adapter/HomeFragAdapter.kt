@@ -13,10 +13,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.munachi.citiflo.R
 import com.munachi.citiflo.databinding.BikeItemLayoutBinding
+import com.munachi.citiflo.databinding.FraghomeRvLayoutBinding
 import com.munachi.citiflo.model.Biker
 
-class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
-    : RecyclerView.Adapter<BikersAdapter.IceCreamViewHolder>() {
+class HomeFragAdapter(private val context: Context, var item: ArrayList<Biker>)
+    : RecyclerView.Adapter<HomeFragAdapter.IceCreamViewHolder>() {
 
     private lateinit var mListener: onItemClickedListener
 
@@ -30,16 +31,16 @@ class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
     }
 
     inner class IceCreamViewHolder(
-        val binding: BikeItemLayoutBinding,
+        val binding: FraghomeRvLayoutBinding,
         listener: onItemClickedListener
     ) : RecyclerView.ViewHolder(binding.root) {
 
-        val bikePhotoRv = binding.PhotoUriRv
-        val deliveryTypeRv = binding.deliveryTypeRv
-        val deliveryProductsRv = binding.deliveryProductsRv
-        val bikerRouteRv = binding.bikerRouteRv
-        val bikeNameRv = binding.bikeNameRv
-        val bikeRatingRv = binding.bikeRatingRv
+        val bikePhotoRv = binding.HomePhotoUriRv
+        val deliveryTypeRv = binding.homeDeliveryTypeRv
+        val deliveryProductsRv = binding.homeDeliveryProductsRv
+        val bikerRouteRv = binding.homeBikerRouteRv
+        val bikeNameRv = binding.homeCitiflovehicleNameRv
+        val bikeRatingRv = binding.homeRatingRv
 
         init {
             itemView.setOnClickListener {
@@ -49,7 +50,7 @@ class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IceCreamViewHolder {
-        val layout = BikeItemLayoutBinding.inflate(LayoutInflater.from(parent.context),
+        val layout = FraghomeRvLayoutBinding.inflate(LayoutInflater.from(parent.context),
             parent, false)
         return IceCreamViewHolder(layout, mListener)
     }
@@ -64,18 +65,27 @@ class BikersAdapter(private val context: Context, var item: ArrayList<Biker>)
 
         holder.deliveryTypeRv.text = current.deliveryType
         holder.deliveryProductsRv.text= current.deliveryProducts
-        holder.bikerRouteRv.text = current.bikerRoute!!.trim()
-        holder.bikeNameRv.text = current.bikeName.toString().trim()
+        holder.bikerRouteRv.text = current.bikerRoute
+        holder.bikeNameRv.text = current.bikeName.toString()
         holder.bikeRatingRv.setText(current.bikeRating)
 
         Glide.with(context)
             .load(current.PhotoUri)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
-            //.error(placeholder)
             .placeholder(R.drawable.alert_circle)
-          /*  .dontTransform()
-            .override(200,200)*/
+            .dontTransform()
             .into(holder.bikePhotoRv)
+
+
+/*
+        Glide.with(context)
+            .load(current.PhotoUri)
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .error(placeholder)
+            .placeholder(R.drawable.alert_circle)
+            .dontTransform()
+            .override(200,200)
+            .into(holder.bikePhotoRv)*/
 
     }
 

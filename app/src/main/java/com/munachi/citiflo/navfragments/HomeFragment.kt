@@ -7,23 +7,41 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.ArrayAdapter
-import android.widget.Spinner
+import android.widget.EditText
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.onlinemarket.onboard_and_Auth.model.LikeModel
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.munachi.citiflo.BikerActivity
+import com.munachi.citiflo.activities.BikerActivity
+import com.munachi.citiflo.activities.BusActivity
+import com.munachi.citiflo.activities.DetailsActivity
 import com.munachi.citiflo.R
-import com.munachi.citiflo.adapter.LikedOnClickInterface
+import com.munachi.citiflo.activities.TruckActivity
+import com.munachi.citiflo.activities.VanActivity
+import com.munachi.citiflo.adapter.HomeFragAdapter
 import com.munachi.citiflo.databinding.FragmentHomeBinding
+import com.munachi.citiflo.helperclasses.HomeHelperClass
+import com.munachi.citiflo.model.Biker
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
+    private lateinit var searchView: EditText
     private lateinit var databaseReference: DatabaseReference
     private lateinit var auth: FirebaseAuth
-   // private var likeDBRef = Firebase.firestore.collection("LikedProducts")
+    private lateinit var gridRecycler: RecyclerView
+    private lateinit var adapter: HomeFragAdapter
+    private var newArrayList: ArrayList<Biker> = arrayListOf()
+    private var tempArrayList: ArrayList<Biker> = arrayListOf()
+    lateinit var photoId: Array<Int>
+    lateinit var deliveryType: Array<String>
+    lateinit var deliveryProduct: Array<String>
+    lateinit var bikerRoute: Array<String>
+    lateinit var bikeName: Array<String>
+    lateinit var bikeRating: Array<String>
+
+    // private var likeDBRef = Firebase.firestore.collection("LikedProducts")
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
@@ -37,16 +55,53 @@ class HomeFragment : Fragment() {
         databaseReference = FirebaseDatabase.getInstance().getReference("products")
         auth = FirebaseAuth.getInstance()
 
+
+        searchView = binding.searchView
+        photoId = HomeHelperClass.headingPhotoUri
+        deliveryType = HomeHelperClass.headingDeliveryType
+        deliveryProduct = HomeHelperClass.headingDeliveryProducts
+        bikerRoute = HomeHelperClass.headingBikerRoute
+        bikeName = HomeHelperClass.headingBikeName
+        bikeRating = HomeHelperClass.headingBikeRating
+
+        gridRecycler = binding.homeRv
+        gridRecycler.setHasFixedSize(true)
+        gridRecycler.layoutManager = GridLayoutManager(requireContext(), 2)
+
         dropDownMenu()
-       // updateUiInteraction()
-        binding.bikeImage.setOnClickListener {
-            //findNavController().navigate(R.id.action_homeFragment_to_saveFragment)
-            val animation = AnimationUtils.loadAnimation( requireContext() , R.anim.fade_in)
-            val intent = Intent(requireContext(),BikerActivity::class.java)
-            startActivity(intent)
-        }
+
+        allVehicleHireLayoutsNavigation()
+
+        getUserData()
     }
 
+    private fun allVehicleHireLayoutsNavigation(){
+
+        binding.bikeImage.setOnClickListener {
+            val animation = AnimationUtils.loadAnimation( requireContext() , R.anim.fade_in)
+            val intent = Intent(requireContext(), BikerActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.busImage.setOnClickListener {
+            val animation = AnimationUtils.loadAnimation( requireContext() , R.anim.fade_in)
+            val intent = Intent(requireContext(), BusActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.vanImage.setOnClickListener {
+            val animation = AnimationUtils.loadAnimation( requireContext() , R.anim.fade_in)
+            val intent = Intent(requireContext(), VanActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.truckImage.setOnClickListener {
+            val animation = AnimationUtils.loadAnimation( requireContext() , R.anim.fade_in)
+            val intent = Intent(requireContext(), TruckActivity::class.java)
+            startActivity(intent)
+        }
+
+    }
      private fun dropDownMenu(){
         // get reference to the string array that we just created
         val languages = resources.getStringArray(R.array.Location)
@@ -58,4 +113,42 @@ class HomeFragment : Fragment() {
         autocompleteTV.setAdapter(arrayAdapter)
     }
 
+    private fun getUserData() {
+
+        lateinit var item: Biker
+
+        for (i in photoId.indices) {
+            item = Biker(
+                PhotoUri = photoId[i],
+                deliveryType = deliveryType[i],
+                deliveryProducts = deliveryProduct[i],
+                bikerRoute = bikerRoute[i],
+                bikeName = bikeName[i],
+                bikeRating = bikeRating[i]
+            )
+            newArrayList.add(item)
+        }
+
+        tempArrayList.addAll(newArrayList)
+
+        adapter = HomeFragAdapter(requireContext(), tempArrayList)
+
+        binding.homeRv.adapter = adapter
+
+        adapter.setOnClickListener(object : HomeFragAdapter.onItemClickedListener {
+
+            override fun onItemClicked(position: Int) {
+                val current = newArrayList[position]
+                val intent = Intent(requireContext(), DetailsActivity::class.java)
+                intent.putExtra("photoId", current.PhotoUri)
+                intent.putExtra("deliveryType", current.deliveryType)
+                intent.putExtra("deliveryProduct", current.deliveryProducts)
+                intent.putExtra("bikerRoute",  current.bikerRoute)
+                intent.putExtra("bikeName", current.bikeName)
+                intent.putExtra("bikeRating", current.bikeRating)
+
+                startActivity(intent)
+            }
+        })
+    }
 }

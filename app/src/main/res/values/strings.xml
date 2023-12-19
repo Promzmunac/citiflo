@@ -56,6 +56,9 @@
     <string name="_4_6">4.6</string>
     <string name="search_location">search location</string>
     <string name="the_local_government_where_the_vehicle_is_needed">The Local Government where the vehicle is needed</string>
+    <string name="to_enjoy_access_to_several_logistics_connections">To enjoy access to several logistics connections,</string>
+    <string name="Bus">Bus</string>
+    <string name="Van">Van</string>
 
     <string-array name="Location">
         <item>Lagos State</item>

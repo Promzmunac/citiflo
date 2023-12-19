@@ -9,18 +9,17 @@ class BikerHelperClass {
         val headingPhotoUri = arrayOf(
             R.drawable.biker,
             R.drawable.bikertwo,
-            R.drawable.bikerfive,
+            R.drawable.bike,
             R.drawable.bikerfour,
             R.drawable.bikerthree )
 
         val headingDeliveryType = arrayOf(
-          "support@brainexpress.c\n" +
-                  "om.ng",
-          "support@Kwik.delivery",
-          "support@gokada.ng",
-          "ezex@service",
-            "Emporium@service",
-            "Nationx@service")
+            "BraineXpress",
+            "Kwik",
+            "Gokada",
+            "ezex@service",
+            "Emporium",
+            "Nationx")
 
         val headingBikerRoute= arrayOf(
           "Ojo",
@@ -32,21 +31,21 @@ class BikerHelperClass {
         val headingBikeRating = arrayOf("5.4","6.5","7.6","8.3","4.0")
 
         val headingDeliveryProducts = arrayOf(
-          "33, crossway plaza, 3/5charity road, besideUBA,NewOko Oba, Lagosstate",
-          "Virtual Company(Agents)Playstore &Appstore",
-          "Virtual Company- Playstore &Appstore",
-          "Plot 1, 3 Osoloway, AjaoEstate, Lagos",
-          "No 1 Olaniyanclose, Maryland, Ikeja, Lagosstate",
-            "No 8, Unity road, Lagosstate"
+            "33, crossway plaza, 3/5charity road, besideUBA,NewOko Oba",
+            "Virtual Company(Agents)Playstore &Appstore",
+            "Virtual Company- Playstore &Appstore",
+            "Plot 1, 3 Osolo Way, Ajao Estate, Lagos",
+            "No 1 Olaniyanclose, Maryland, Ikeja, Lagos state",
+            "No 8, Unity road, Lagos State"
         )
 
         val headingBikeName = arrayOf(
-          "Brain Express",
-          "Kwik Delivery",
-          "Gokada",
-          "Ezex Courier Services Limited",
-          "Emporium Pickup Service\n" +
-                  "and Delivery" ,
-            "Nation Delivery Nigeria Ltd")
+            "Brain Express ",
+            "Kwik Delivery ",
+            "Gokada ",
+            "Ezex Courier ",
+            "Emporium " ,
+            "Nation Delivery ")
     }
 }
+

@@ -23,8 +23,8 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
-import com.munachi.citiflo.HomeActivity
-import com.munachi.citiflo.OnboardingActivity
+import com.munachi.citiflo.activities.HomeActivity
+import com.munachi.citiflo.activities.OnboardingActivity
 import com.munachi.citiflo.R
 import com.munachi.citiflo.databinding.FragmentChooseAuthBinding
 

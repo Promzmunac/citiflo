@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.BikerActivity">
+    tools:context=".activities.BusActivity">
 
 
     <LinearLayout
@@ -42,7 +42,7 @@
                 android:layout_marginStart="10dp"
                 android:gravity="center"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="@string/Bike"
+                android:text="@string/Bus"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
@@ -130,7 +130,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bike_Rv"
+        android:id="@+id/bus_Rv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="4dp"

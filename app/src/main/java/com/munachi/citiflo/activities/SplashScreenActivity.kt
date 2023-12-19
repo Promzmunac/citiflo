@@ -1,14 +1,13 @@
-package com.munachi.citiflo
+package com.munachi.citiflo.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
-import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import com.munachi.citiflo.R
 import com.munachi.citiflo.databinding.ActivityMainBinding
 
 class SplashScreenActivity : AppCompatActivity() {

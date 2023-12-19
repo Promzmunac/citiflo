@@ -9,6 +9,6 @@
     android:id="@+id/authfragmentview"
     android:name="androidx.navigation.fragment.NavHostFragment"
     app:navGraph="@navigation/nav_host"
-    tools:context=".AuthenticationActivity">
+    tools:context=".activities.AuthenticationActivity">
 
 </androidx.fragment.app.FragmentContainerView>

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="4dp">
+    android:padding="2dp">
+
+
 
 
     <LinearLayout
@@ -21,7 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="4dp"
+            android:padding="3dp"
             android:layout_marginBottom="20dp"
             android:orientation="vertical">
 
@@ -31,20 +33,22 @@
                 android:layout_marginBottom="4dp"
                 android:outlineSpotShadowColor="@color/md_deep_orange_600"
                 android:outlineAmbientShadowColor="@color/md_deep_orange_600"
-                app:cardElevation="6dp"
+                app:cardElevation="8dp"
                 app:cardCornerRadius="10dp">
 
                 <ImageView
-                    android:id="@+id/PhotoUri_Rv"
+                    android:id="@+id/HomePhotoUri_Rv"
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
+                    android:focusableInTouchMode="true"
+                    android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/trucktwo" />
+                    android:src="@drawable/bikerfour" />
             </androidx.cardview.widget.CardView>
 
 
             <TextView
-                android:id="@+id/deliveryType_Rv"
+                android:id="@+id/home_deliveryType_Rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -59,7 +63,7 @@
                 tools:ignore="RtlSymmetry" />
 
             <TextView
-                android:id="@+id/deliveryProducts_Rv"
+                android:id="@+id/home_deliveryProducts_Rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
@@ -72,7 +76,7 @@
 
 
             <TextView
-                android:id="@+id/bikerRoute_Rv"
+                android:id="@+id/home_bikerRoute_Rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -93,7 +97,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/bikeName_Rv"
+                    android:id="@+id/home_citiflovehicleName_Rv"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_marginTop="4dp"
@@ -105,6 +109,7 @@
                     android:textStyle="italic" />
 
                 <ImageView
+                    android:id="@+id/image_Rating_Rv"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_gravity="bottom|center"
@@ -112,7 +117,7 @@
                     android:src="@drawable/ic_rating" />
 
                 <TextView
-                    android:id="@+id/bikeRating_Rv"
+                    android:id="@+id/home_Rating_Rv"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"
                     android:layout_marginStart="4dp"

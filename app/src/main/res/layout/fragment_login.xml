@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@color/white">
 
     <LinearLayout
@@ -56,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:paddingTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,8 +87,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:hint="@string/email_or_phone_number"
                     android:fontFamily="@font/poppins"
+                    android:hint="@string/email_or_phone_number"
                     android:inputType="textEmailAddress"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
@@ -108,8 +110,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:hint="@string/confirm_password"
                     android:fontFamily="@font/poppins"
+                    android:hint="@string/confirm_password"
                     android:inputType="textPassword"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
@@ -132,17 +134,17 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textSize="15sp"
-                    android:text="@string/remember_me" />
+                    android:text="@string/remember_me"
+                    android:textSize="15sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/forgot_password"
-                    android:fontFamily="@font/poppins"
-                    android:textColor="#FFA400"
-                    android:textAlignment="textEnd"
                     android:drawablePadding="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/forgot_password"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFA400"
                     app:drawableStartCompat="@drawable/help_circle" />
 
             </LinearLayout>
@@ -157,9 +159,9 @@
                 android:layout_weight="2"
                 android:background="@drawable/btn_grey_rounded_selector"
                 android:backgroundTint="@color/md_green_600"
+                android:fontFamily="@font/poppins_semibold"
                 android:padding="8dp"
                 android:text="SignUp"
-                android:fontFamily="@font/poppins_semibold"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -173,8 +175,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/text_bg"
-                android:padding="10dp"
                 android:fontFamily="@font/poppins"
+                android:padding="10dp"
                 android:text="@string/continue_with_google"
                 android:textAlignment="center"
                 app:drawableStartCompat="@drawable/google"
@@ -188,12 +190,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
                 android:padding="20dp"
                 android:text="Dont Have an Account?"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="12sp"
-                android:fontFamily="@font/poppins"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/register_btn"

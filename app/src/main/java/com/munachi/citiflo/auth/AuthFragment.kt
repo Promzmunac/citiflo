@@ -22,8 +22,8 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
-import com.munachi.citiflo.HomeActivity
-import com.munachi.citiflo.OnboardingActivity
+import com.munachi.citiflo.activities.HomeActivity
+import com.munachi.citiflo.activities.OnboardingActivity
 import com.munachi.citiflo.R
 import com.munachi.citiflo.databinding.FragmentAuthBinding
 import com.munachi.citiflo.model.User
